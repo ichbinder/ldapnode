@@ -1,0 +1,10 @@
+---
+apps:
+  - script: /home/jakob/git/ldappass/build/backend/bin/server.js
+    name: 'CMSignIn'
+    cwd: /home/jakob/git/ldappass/build/backend/
+    watch: /home/jakob/git/ldappass/build/backend/ 
+    ignore_watch:
+        - node_modules
+        - logs
+        - startd.yaml

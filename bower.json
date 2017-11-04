@@ -1,0 +1,7 @@
+{
+  "name": "ldapnode",
+  "dependencies": {
+    "fetch": "^1.0.0",
+    "es6-promise": "^4.0.5"
+  }
+}

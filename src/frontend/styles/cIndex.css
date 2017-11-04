@@ -1,0 +1,198 @@
+body {
+  /*background: #ffffff url("../images/cmimg.jpg") no-repeat;
+	overflow: inherit;*/
+  /* The image used */
+  background-image: url("../images/cmimg.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+	font-size: 30px;
+  background-attachment: fixed;
+}
+
+h1 {
+	text-align: center;
+	font-size: 5vw;
+	padding: 0;
+	margin: 0;
+}
+
+h2 {
+  text-align: center;
+	font-size: 3vw;
+	padding: 0;
+	margin: 0;
+  margin-bottom: 3%;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2vw;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+	width: 100%;
+}
+
+.head {
+  width: 65%;
+	padding: 3%;
+  margin: auto;
+  margin-top: 3%;
+	background-color: #f9f9f9;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(55, 55, 55, 0.32);
+}
+
+.addUser {
+	display: flex;
+  flex-direction: column;
+	width: 65%;
+  padding: 3%;
+  margin: auto;
+  margin-top: 3%;
+	background-color: #f9f9f9;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(55, 55, 55, 0.32);
+}
+
+.infoBox {
+	width: 65%;
+  margin: auto;
+  margin-top: 3%;
+  padding: 3%;
+	font-size: 2.5vw;
+  background-color: #b62e04;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(55, 55, 55, 0.32);
+
+  animation-name: errorInfo;
+  animation-duration: 100ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 4;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes errorInfo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+.zugangscode {
+  font-size: 2vw;
+}
+
+.zugangscodeButton {
+  font-size: 2vw;
+  margin-top: 3%;
+}
+
+.form-adduser {
+	display: flex;
+	flex-direction: column;
+}
+
+.adduser-input {
+	display: flex;
+}
+
+.userPass-input {
+  width: 50%;
+  font-size: 2vw;
+}
+
+@media only screen and ( min-width: 800px ) {
+  .head, .addUser, .infoBox {
+    width: 508.938px;
+    padding: 23.5px;
+    margin-top: 23.4844px;
+  }
+
+  .zugangscode, .zugangscodeButton, .userPass-input {
+    width: 508.938px;
+  }
+
+  .zugangscode, .userPass-input {
+    font-size: 14.66px;
+  }
+
+  .infoBox {
+    font-size: 19.975px;
+  }
+
+  h1 {
+    font-size: 39.65px;
+  }
+
+  h2 {
+    font-size: 23.97px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+}
+
+@media ( max-width: 500px ) {
+  .zugangscode, .userPass-input {
+    font-size: 10.02px;
+  }
+
+  .infoBox {
+    font-size: 12.5px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+}
+
+@media ( max-width: 350px ) {
+  .head, .addUser, .infoBox {
+    width: 204.094px;
+    padding: 9.40625px;
+    margin-top: 9.40625px;
+  }
+
+  .infoBox {
+    font-size: 12.5px;
+  }
+
+  .adduser-input {
+  	flex-direction: column;
+  }
+
+  .adduser-input .userPass-input {
+    width: 100%;
+    margin-top: 0;
+  }
+}
